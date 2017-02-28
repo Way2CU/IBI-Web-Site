@@ -1,0 +1,41 @@
+<document>
+	<!-- Profile link page -->
+	<a
+		href="URL::make(array(), 'profile.xml')"
+		cms:eval="href"
+		class="URL::is_active('profile.xml')"
+		cms:optional="class"
+		>
+		<cms:text constant="profile" />
+	</a>
+
+	<!-- About link page -->
+	<a
+		href="URL::make(array(), 'about.xml')"
+		cms:eval="href"
+		class="URL::is_active('about.xml')"
+		cms:optional="class"
+		>
+		<cms:text constant="about" />
+	</a>
+
+	<!-- Profile link page -->
+	<a
+		href="URL::make(array(), 'news.xml')"
+		cms:eval="href"
+		class="URL::is_active('news.xml')"
+		cms:optional="class"
+		>
+		<cms:text constant="news" />
+	</a>
+
+	<!-- Profile link page -->
+	<a
+		href="URL::make(array(), 'contact.xml')"
+		cms:eval="href"
+		class="URL::is_active('contact.xml')"
+		cms:optional="class"
+		>
+		<cms:text constant="contact" />
+	</a>
+</document>
