@@ -1,6 +1,6 @@
-# IBI-site
+# IBI Main Web Site
 
-IBI site
+IBI
 
 ## License
 
