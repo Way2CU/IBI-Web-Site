@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE document SYSTEM "../units/schema/language.dtd">
 <document>
-	<cms:var name="_DOCTYPE"/>
 	<html lang="$language" dir="$language_rtl ? 'rtl' : 'ltr'" cms:eval="lang,dir">
 		<head>
 			<title><cms:text constant="site_title"/></title>
@@ -9,7 +8,23 @@
 		</head>
 
 		<body>
-			<h1>It works!</h1>
+			<cms:template file="stock/header_generic.xml">
+				<param name="logo_sprite_icon" value="icon-logo-white"/>
+				<param name="sprite" value="site-sprite.svg"/>
+				<param name="menu" value="parts/menu_items.xml"/>
+				<param name="fixed" value=""/>
+			</cms:template>
 		</body>
+		<section class="home">
+			<cms:module
+				name="articles"
+				action="show"
+				text_id="home_page"
+				template="stock/article_generic.xml"
+				>
+				<param name="title" value=""/>
+				<param name="title_tag" value="h1"/>
+			</cms:module>
+		</section>
 	</html>
 </document>
