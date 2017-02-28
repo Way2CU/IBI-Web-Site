@@ -6,25 +6,35 @@
  * Authors: Iliya Melishev
  */
 
+@header_size: 6rem;
+@logo_spacing: 0.5rem;
 
 header {
 	padding: 0 calc(~'(100% - 1200px)' / 2 );
-	border-bottom: 2px solid @color_text;
+	border-bottom: 1px solid white;
 	text-align: center;
+	background-color: white;
+	box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
+	transform: translateZ(0);
+
+	&.home {
+		background-color: transparent;
+	}
 }
 
 header a.logo {
-	width: 50px;
-	height: 50px;
-	padding: 1em;
+	padding: @logo_spacing;
 	display: inline-block;
 	vertical-align: middle;
+	font-size: 1.2rem;
 }
 
 header a.logo svg {
-	display: block;
-	width: 50px;
-	height: 50px;
+	display: inline-block;
+
+	@logo_size: @header_size - (2 * @logo_spacing);
+	width: @logo_size;
+	height: @logo_size;
 }
 
 header nav#main {
@@ -35,11 +45,23 @@ header nav#main {
 header nav#main a {
 	display: inline-block;
 	vertical-align: middle;
-	padding: 1em;
+	padding: (@header_size - 1.2rem) / 2;
+
 	text-decoration: none;
-	color: white;
+	color: @color_text;
+	font-size: 1.2rem;
+
 	transition: all 0.3s;
-		&:hover {
-			color: @color_active_link;
-		}
+
+	&:hover {
+		text-decoration: underline;
+	}
+
+	&.active {
+		color: @color_active_link;
+	}
+}
+
+header.home nav#main a {
+	color: @color_title_text;
 }

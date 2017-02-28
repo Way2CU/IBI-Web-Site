@@ -23,9 +23,69 @@ section.home article {
 }
 
 section.home article h1 {
-	margin: 0;
-	width: 80%:
-	display: block;
+	width: 80%;
 	margin: 0 auto;
+
+	color: @color_title_text;
 	text-shadow: 2px 2px 2px fade(@color_menu, 55%);
+}
+
+/*
+ * Profile page
+*/
+
+h1.styled {
+	padding: 2.5em;
+	margin: 0;
+	color: @color_title_text;
+	text-align: center;
+	text-transform: uppercase;
+
+	background-position: center;
+	background-repeat: no-repeat;
+
+	&.profile {
+		background-image: url(../images/profile_header.jpg);
+	}
+}
+
+section.profile article {
+	padding: 5em calc(~'(100% - 800px)' / 2);
+	color: @color_text;
+}
+
+section.profile article h2 {
+	color: @color_title;
+	text-shadow: 0 0 3px @color_title_text;
+}
+
+section.profile article p {
+	font-family: 'open_sans';
+	text-shadow: 0 0 3px @color_title_text;
+}
+
+section.profile article:nth-of-type(4),
+section.profile article:nth-of-type(2) {
+	background-image: url(../images/white-box.svg), url(../images/profile_objective.jpg);
+	background-position: calc(~'(50% - 300px)') @section_spacing, top center;
+	background-size: 600px calc(~'100% - ' @section_spacing * 2), auto;
+	background-repeat: no-repeat;
+	padding: calc(@section_spacing ~' + 1rem');
+	padding-left: calc(~'(50% - 600px) + 1rem');
+	padding-right: calc(~'50% + 1rem');
+}
+
+section.profile article:nth-of-type(3) {
+	display: table-cell;
+	padding: 350px + @section_spacing;
+	padding-right: calc(~'50% - 600px');
+	padding-left: calc(50% + 1rem);
+
+	background-image: url(../images/chess_player.jpg);
+	background-position: calc(~'(50% - 300px)');
+	background-repeat: no-repeat;
+}
+
+section.profile article:nth-of-type(4) {
+	background-image: url(../images/white-box.svg), url(../images/profile_focus.jpg);
 }
