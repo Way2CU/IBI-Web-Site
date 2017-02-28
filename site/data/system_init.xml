@@ -6,6 +6,8 @@
 	<module name="backend" order="2" preload="yes"/>
 	<module name="page_info" order="3" preload="yes"/>
 	<module name="language_menu" order="4" preload="yes"/>
+	<module name="articles" order="5" preload="no"/>
+
 	<module name="captcha" order="0" preload="no"/>
 
 	<user
