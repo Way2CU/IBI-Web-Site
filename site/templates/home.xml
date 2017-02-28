@@ -13,6 +13,7 @@
 				<param name="sprite" value="site-sprite.svg"/>
 				<param name="menu" value="parts/menu_items.xml"/>
 				<param name="fixed" value=""/>
+				<param name="class" value="home"/>
 			</cms:template>
 		</body>
 		<section class="home">
