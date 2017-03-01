@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE document SYSTEM "../units/schema/language.dtd">
+<document>
+	<html lang="$language" dir="$language_rtl ? 'rtl' : 'ltr'" cms:eval="lang,dir">
+		<head>
+			<title>
+				<cms:text constant="site_title"/>
+				<cms:raw text=" - "/>
+				<cms:text constant="media"/>
+			</title>
+			<cms:module name="head_tag" action="print_tag"/>
+		</head>
+
+		<body>
+			<cms:template file="stock/header_generic.xml">
+				<param name="logo_sprite_icon" value="icon-logo-color"/>
+				<param name="sprite" value="site-sprite.svg"/>
+				<param name="menu" value="parts/menu_items.xml"/>
+				<param name="fixed" value=""/>
+			</cms:template>
+
+			<section class="media">
+				<h1 class="styled media">
+					<cms:text constant="media"/>
+				</h1>
+				<div class="articles">
+					<cms:module
+						name="articles"
+						action="show_list"
+						group="media_articles"
+						template="stock/article_generic.xml"
+						/>
+
+				</div>
+			<footer>
+				<cms:template file="parts/footer.xml" />
+			</footer>
+		</body>
+	</html>
+</document>
