@@ -39,6 +39,9 @@
 					<param name="title_tag" value="h2"/>
 				</cms:module>
 			</section>
+			<footer>
+				<cms:template file="parts/footer.xml" />
+			</footer>
 		</body>
 	</html>
 </document>
