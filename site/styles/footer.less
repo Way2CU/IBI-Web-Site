@@ -1,0 +1,63 @@
+/**
+ * Footer Style Sheet
+ * IBI
+ *
+ * Copyright (c) 2017. by Way2CU, http://way2cu.com
+ * Authors: Iliya Melishev
+ */
+
+footer {
+	background-color: @color_footer;
+}
+
+footer div.footer_links {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+footer div.footer_links a {
+	display: inline-block;
+	vertical-align: middle;
+	text-decoration: none;
+	color: @color_menu;
+	padding: 0 1em;
+	position: relative;
+	transition: all 0.3s;
+
+	&:hover {
+		color: @color_active_link;
+		cursor: pointer;
+	}
+}
+
+footer div.footer_links a:after {
+	content: "";
+	position: absolute;
+	left: 100%;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 1px;
+	height: 80px;
+	background-color: fade(@color_menu, 20%);
+}
+
+footer div.footer_links a:last-of-type:after {
+	display: none;
+}
+
+footer div.footer_links a svg {
+	width: 1em;
+	height: 1em;
+	display: inline-block;
+	vertical-align: middle;
+	padding-right: 0.5em;
+}
+
+footer div.footer_links a.linkedin:after {
+	display: none;
+}
+
+footer div.footer_links a.linkedin svg {
+	width: 3em;
+	height: 3em;
+}
