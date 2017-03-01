@@ -1,7 +1,7 @@
 <document>
 	<div class="footer_links">
 		<!-- Linkdin link -->
-		<a href="linkedin.com" class="linkedin">
+		<a href="https://www.linkedin.com/company-beta/17920748" class="linkedin">
 			<cms:svg file="site-sprite.svg" symbol="icon-linkedin"/>
 		</a>
 
