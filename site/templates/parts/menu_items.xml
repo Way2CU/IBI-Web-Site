@@ -20,14 +20,45 @@
 	</a>
 
 	<!-- Profile link page -->
-	<a
-		href="URL::make(array(), 'news.xml')"
-		cms:eval="href"
-		class="URL::is_active('news.xml')"
-		cms:optional="class"
-		>
-		<cms:text constant="news" />
-	</a>
+	<div>
+		<a
+			href="URL::make(array(), 'news.xml')"
+			cms:eval="href"
+			class="URL::is_active('news.xml')"
+			cms:optional="class"
+			>
+			<cms:text constant="news" />
+		</a>
+
+		<nav>
+			<a
+				href="URL::make(array(), 'media.xml')"
+				cms:eval="href"
+				class="URL::is_active('media.xml')"
+				cms:optional="class"
+				>
+				<cms:text constant="media" />
+			</a>
+
+			<a
+				href="URL::make(array(), 'events.xml')"
+				cms:eval="href"
+				class="URL::is_active('events.xml')"
+				cms:optional="class"
+				>
+				<cms:text constant="events" />
+			</a>
+
+			<a
+				href="URL::make(array(), 'research.xml')"
+				cms:eval="href"
+				class="URL::is_active('research.xml')"
+				cms:optional="class"
+				>
+				<cms:text constant="research" />
+			</a>
+		</nav>
+	</div>
 
 	<!-- Profile link page -->
 	<a
