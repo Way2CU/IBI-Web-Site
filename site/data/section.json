@@ -1,7 +1,10 @@
 {
 	"/": "home.xml",
-	"/profile":"profile.xml",
-	"/about":"about.xml",
-	"/news":"news.xml",
-	"/contact":"contact.xml"
+	"/profile": "profile.xml",
+	"/about": "about.xml",
+	"/news": "news.xml",
+	"/media": "media.xml",
+	"/events": "events.xml",
+	"/research": "research.xml",
+	"/contact": "contact.xml"
 }
