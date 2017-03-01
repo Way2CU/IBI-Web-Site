@@ -5,9 +5,12 @@
     "managment":"MANAGMENT",
     "news": "News & Insights",
     "contact": "Contact",
+    "media":"Media",
+    "investment": "IBI Investment House",
+    "events":"Events Updates",
+    "research":"Research",
     "mail": "E-mail: info@ibi-ils-partners.com",
     "phone":"+972-3-519-9900",
     "footer_phone": "Tel. +972-3-519-9900",
     "copyright_ibi": "© IBI ILS Partners Ltd. 2017"
-
 }
