@@ -6,5 +6,6 @@
 	"/media": "media.xml",
 	"/events": "events.xml",
 	"/research": "research.xml",
-	"/contact": "contact.xml"
+	"/contact": "contact.xml",
+	"/{name}" : "article_view.xml"
 }
