@@ -190,17 +190,20 @@ section.news article p {
 /*
  * media page
 */
-
 section.media h1 {
 	background-image: url(../images/media_header.jpg);
 }
 
+section.research div.articles,
+section.events div.articles,
 section.media div.articles {
 	width: 1200px;
 	margin: 0 auto;
 	padding: 3em 0;
 }
 
+section.research div.articles article,
+section.events div.articles article,
 section.media div.articles article {
 	display: inline-block;
 	vertical-align: top;
@@ -215,16 +218,22 @@ section.media div.articles article {
 	box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
 }
 
+section.research div.articles article:nth-of-type(2),
+section.events div.articles article:nth-of-type(2),
 section.media div.articles article:nth-of-type(2) {
 	margin: 0 26px;
 }
 
+section.research div.articles article img,
+section.events div.articles article img,
 section.media div.articles article img {
 	position: absolute;
 	top: 0;
 	left: 0;
 }
 
+section.research div.articles article a,
+section.events div.articles article a,
 section.media div.articles article a {
 	position: absolute;
 	bottom: 0;
@@ -238,8 +247,142 @@ section.media div.articles article a {
 	border-top: 1px solid fade(@color_menu, 20%);
 	text-align: center;
 	padding: 1em 0;
+	transition: color 0.3s;
 
 	&:hover {
-		color: red;
+		color: @color_text;
 	}
+}
+
+/*
+ * Events page
+ * Styles connected in Media page
+*/
+
+section.view h1,
+section.events h1 {
+	background-image: url(../images/event_header.jpg);
+}
+
+section.events div.articles article {
+	min-height: 600px;
+}
+
+
+/*
+ * Article view page
+*/
+
+section.view article {
+	width: 1200px;
+	margin: 0 auto;
+	position: relative;
+	box-sizing: border-box;
+	padding-right: 30%;
+}
+
+section.view article h2 {
+	border-bottom: 1px solid @color_menu;
+	padding-bottom: 0.5em;
+}
+
+section.view article img {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+/*
+ * Research page
+ * Styled connected at media page
+*/
+
+section.research h1 {
+	background-image: url(../images/research_header.jpg);
+}
+
+section.research div.articles article a:after {
+	content: " ";
+	display: inline-block;
+	vertical-align: middle;
+	width: 32px;
+	height: 32px;
+	background-image: url(../images/pdf.png);
+	background-size: 32px 32px;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-left: 1em;
+}
+
+/*
+ * Contact page
+*/
+
+section.contact h1 {
+	background-image: url(../images/contact_header.jpg);
+}
+
+section.contact #form_container {
+	display: inline-block;
+	vertical-align: top;
+	width: 600px;
+	margin-left: calc(~'50% - 600px');
+	box-sizing: border-box;
+	padding: 1em;
+}
+
+section.contact #form_container form label {
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+	margin-bottom: 1em;
+}
+
+section.contact #form_container form label input {
+	box-sizing: border-box;
+	padding: 1em 0.5em;
+	border: 1px solid fade(@color_menu, 40%);
+	width: 100%;
+
+	&:hover,
+	&:focus {
+		border: 1px solid @color_title;
+	}
+}
+
+section.contact #form_container form label textarea {
+	width: 100%;
+	box-sizing: border-box;
+	height: 150px;
+	resize: none;
+
+	&:hover,
+	&:focus {
+		border: 1px solid @color_title;
+	}
+}
+
+section.contact #form_container form div.controls  button {
+	border: 1px solid @color_title;
+	background-color: @color_title_text;
+	color: @color_title;
+	padding: 1em;
+	border-radius: 40px;
+	transition: all 0.3s;
+
+	&:hover {
+		color: @color_text;
+		border-color: @color_text;
+		cursor: pointer;
+	}
+}
+
+section.contact div#map {
+	display: inline-block;
+	vertical-align: top;
+	width: 600px;
+	height: 600px;
+	margin-right: calc(~'50% - 600px');
+	margin-top: 1em;
+	margin-bottom: 1em;
 }
