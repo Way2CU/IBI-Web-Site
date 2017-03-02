@@ -1,0 +1,314 @@
+/**
+ * Content_Mobile Style Sheet
+ * IBI site
+ *
+ * Copyright (c) 2017. by Way2CU, http://way2cu.com
+ * Authors: Iliya Melishev
+ */
+
+section {
+	padding-top: 65px;
+}
+
+section.home {
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-top: 0;
+	color: @color_title_text;
+	background-image: url(../images/mobile_home.jpg);
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	min-height: calc(~'100vw / 1.4958');
+}
+
+
+section.home article h1 {
+	font-size: 1em;
+	text-align: center;
+	padding-top: 30%;
+	margin: 0;
+}
+
+/*
+ * Profile page
+*/
+
+h1.styled {
+	padding: 1em;
+	margin: 0;
+	color: @color_title_text;
+	text-align: center;
+	text-transform: uppercase;
+	background-position: center;
+	background-repeat: no-repeat;
+	&.profile {
+		background-image: url(../images/profile_header.jpg);
+	}
+}
+
+section.profile article {
+	padding: 1em;
+	color: @color_text;
+	padding-bottom: 350px;
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+}
+
+section.profile article:first-of-type {
+	padding: 1em;
+}
+
+section.profile article h2 {
+	color: @color_title;
+	text-shadow: 0 0 3px @color_title_text;
+}
+
+section.profile article p {
+	font-family: 'open_sans';
+	text-shadow: 0 0 3px @color_title_text;
+}
+
+section.profile article:nth-of-type(2) {
+	background-image: url(../images/mobile_profile2.jpg);
+}
+
+section.profile article:nth-of-type(3) {
+	background-image: url(../images/chess_player.jpg);
+	padding: 0 0 400px 0;
+	margin: 0 1em;
+}
+
+section.profile article:nth-of-type(4) {
+	background-image: url(../images/mobile_profile.jpg);
+	padding-bottom: 200px;
+}
+
+/*
+ * About page
+*/
+
+section.managment h1.managment {
+	background-image: url(../images/mobile_managment.jpg);
+}
+
+section.managment article {
+	padding: 1em;
+}
+
+section.managment article img {
+	margin: 0 auto;
+	border: 1px solid fade(@color_menu, 20%);
+	width: 100%;
+}
+
+section.managment article h2 {
+	margin: 0;
+	color: @color_title;
+}
+
+section.managment article h3 {
+	margin: 0;
+	color: @color_title;
+	padding-bottom: 1em;
+	border-bottom: 1px solid fade(@color_menu, 20%);
+	font-size: 1.2em;
+}
+
+/*
+ * News page
+*/
+
+section.news h1 {
+	background-image: url(../images/mobile_investment.jpg);
+}
+
+section.news div.features {
+	margin: 0 auto;
+	padding: 1em 0.5em;
+}
+
+section.news div.features ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	text-align: center;
+}
+
+section.news div.features ul li {
+	display: inline-block;
+	vertical-align: top;
+	width: 50%;
+}
+
+section.news div.features ul li svg {
+	width: 5em;
+	height: 5em;
+}
+
+section.news article {
+	padding: 0 1em;
+	text-align: center;
+	color: @color_title;
+	padding-bottom: 1em;
+}
+
+/*
+ * media page
+*/
+
+section.media h1 {
+	background-image: url(../images/mobile_media.jpg);
+}
+
+section.research div.articles,
+section.events div.articles,
+section.media div.articles {
+	padding: 1em;
+	margin: 0 auto;
+}
+
+section.research div.articles article,
+section.events div.articles article,
+section.media div.articles article {
+	display: block;
+	border: 1px solid fade(@color_menu, 20%);
+	min-height: 500px;
+	box-sizing: border-box;
+	box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+	position: relative;
+	padding: 200px 0.5em 3.5em 0.5em;
+	margin-bottom: 2em;
+}
+
+section.research div.articles article img,
+section.events div.articles article img,
+section.media div.articles article img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+section.research div.articles article a,
+section.events div.articles article a,
+section.media div.articles article a {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100%;
+
+	color: @color_title;
+	text-decoration: none;
+	font-weight: 700;
+	border-top: 1px solid fade(@color_menu, 20%);
+	text-align: center;
+	padding: 1em 0;
+}
+
+/*
+ * Events page
+ * Styles connected in Media page
+*/
+
+section.view h1,
+section.events h1 {
+	background-image: url(../images/mobile_event.jpg);
+}
+
+
+/*
+ * Article view page
+*/
+
+section.view article {
+	margin: 0 auto;
+	position: relative;
+	box-sizing: border-box;
+	padding: 1em;
+}
+
+section.view article h2 {
+	border-bottom: 1px solid @color_menu;
+	padding-bottom: 0.5em;
+}
+
+section.view article img {
+	width: 100%;
+}
+
+/*
+ * Research page
+ * Styled connected at media page
+*/
+
+section.research h1 {
+	background-image: url(../images/mobile_research.jpg);
+}
+
+
+section.research div.articles article a:after {
+	content: " ";
+	display: inline-block;
+	vertical-align: middle;
+	width: 32px;
+	height: 32px;
+	background-image: url(../images/pdf.png);
+	background-size: 32px 32px;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-left: 1em;
+}
+
+/*
+ * Contact page
+*/
+
+section.contact h1 {
+	background-image: url(../images/mobile_contact.jpg);
+}
+
+section.contact #form_container {
+	display: block;
+	box-sizing: border-box;
+	padding: 1em;
+}
+
+section.contact #form_container form label {
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+	margin-bottom: 1em;
+}
+
+section.contact #form_container form label input {
+	box-sizing: border-box;
+	padding: 1em 0.5em;
+	border: 1px solid fade(@color_menu, 40%);
+	width: 100%;
+}
+
+section.contact #form_container form label textarea {
+	width: 100%;
+	box-sizing: border-box;
+	height: 150px;
+	resize: none;
+}
+
+section.contact #form_container form div.controls  button {
+	border: 1px solid @color_title;
+	background-color: @color_title_text;
+	color: @color_title;
+	padding: 1em;
+	border-radius: 40px;
+}
+
+section.contact div#map {
+	display: block;
+	width: 300px;
+	height: 500px;
+	box-sizing: border-box;
+	margin: 1em auto;
+}

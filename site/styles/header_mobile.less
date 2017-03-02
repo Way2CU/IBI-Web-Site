@@ -1,0 +1,56 @@
+/**
+ * Header_mobile Style Sheet
+ * IBI site
+ *
+ * Copyright (c) 2017. by Way2CU, http://way2cu.com
+ * Authors: Iliya Melishev
+ */
+
+@header_size: 4rem;
+@logo_spacing: 0.5rem;
+
+header {
+	padding: 0;
+	transform: translateZ(0);
+	background-color: @color_title_text;
+	box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
+
+	&.home {
+		background-color: transparent;
+	}
+}
+
+header a.logo {
+	padding: @logo_spacing;
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: calc(~'50% - 100px');
+}
+
+header a.logo svg {
+	display: inline-block;
+	@logo_size: @header_size - (2 * @logo_spacing);
+	width: @logo_size;
+	height: @logo_size;
+}
+
+header a.menu {
+	margin-left: 1em;
+	width: 50px;
+	height: 50px;
+	background-color: red;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+div.mobile_menu.visible {
+	width: 100%;
+}
+
+nav#main a {
+	display: block;
+	padding: (@header_size - 1.2rem) / 2;
+	text-decoration: none;
+	color: @color_text;
+	font-size: 1.2rem;
+}
