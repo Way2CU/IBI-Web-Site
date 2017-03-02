@@ -1,0 +1,11 @@
+<document>
+	<article>
+		<cms:markdown param="content" multilanguage="yes" chars="200"/>
+		<a
+			href="URL::make(array('name' => $template['name'],'name' => $params['id']));"
+			cms:eval="href"
+			>
+			<cms:text constant="read_more" />
+		</a>
+	</article>
+</document>

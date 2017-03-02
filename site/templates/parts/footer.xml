@@ -6,7 +6,7 @@
 		</a>
 
 		<!-- Link to google maps -->
-		<a href="google.co.il">
+		<a href="https://www.google.com/maps/place/Ahad+Ha'Am+St+9,+Tel+Aviv-Yafo,+Israel/@32.0637223,34.7674314,17z/data=!3m1!4b1!4m15!1m9!4m8!1m0!1m6!1m2!1s0x151d4c9cbe9b3d65:0xde756930cfc2928c!2sAhad+Ha'Am+St+9,+Tel+Aviv-Yafo,+Israel!2m2!1d34.7696201!2d32.0637223!3m4!1s0x151d4c9cbe9b3d65:0xde756930cfc2928c!8m2!3d32.0637223!4d34.7696201">
 			<cms:module
 				name="articles"
 				action="show"
