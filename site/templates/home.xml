@@ -27,5 +27,10 @@
 				<param name="title_tag" value="h1"/>
 			</cms:module>
 		</section>
+		<cms:mobile>
+			<footer>
+				<cms:template file="parts/footer.xml" />
+			</footer>
+		</cms:mobile>
 	</html>
 </document>
