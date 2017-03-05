@@ -50,7 +50,7 @@ h1.styled {
 section.profile article {
 	padding: 1em;
 	color: @color_text;
-	padding-bottom: 350px;
+	padding-bottom: 100vw;
 	background-position: center bottom;
 	background-repeat: no-repeat;
 	background-size: 100% auto;
@@ -76,13 +76,13 @@ section.profile article:nth-of-type(2) {
 
 section.profile article:nth-of-type(3) {
 	background-image: url(../images/chess_player.jpg);
-	padding: 0 0 400px 0;
+	padding: 0 0 120vw 0;
 	margin: 0 1em;
 }
 
 section.profile article:nth-of-type(4) {
 	background-image: url(../images/mobile_profile.jpg);
-	padding-bottom: 200px;
+	padding-bottom: 60vw;
 }
 
 /*
@@ -162,38 +162,39 @@ section.media h1 {
 	background-image: url(../images/mobile_media.jpg);
 }
 
-section.research div.articles,
-section.events div.articles,
-section.media div.articles {
+section div.articles {
 	padding: 1em;
 	margin: 0 auto;
 }
 
-section.research div.articles article,
-section.events div.articles article,
-section.media div.articles article {
+section div.articles article {
 	display: block;
 	border: 1px solid fade(@color_menu, 20%);
 	min-height: 500px;
 	box-sizing: border-box;
 	box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
 	position: relative;
-	padding: 200px 0.5em 3.5em 0.5em;
+	padding: 180px 0.5em 3.5em 0.5em;
 	margin-bottom: 2em;
 }
 
-section.research div.articles article img,
-section.events div.articles article img,
-section.media div.articles article img {
+section div.articles article p {
+	margin: 0;
+}
+
+section div.articles article h3 {
+	margin: 0;
+	padding: 0.5em 0;
+}
+
+section div.articles article img {
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
 }
 
-section.research div.articles article a,
-section.events div.articles article a,
-section.media div.articles article a {
+section div.articles article a {
 	position: absolute;
 	bottom: 0;
 	left: 50%;
@@ -292,6 +293,7 @@ section.contact #form_container form label input {
 
 section.contact #form_container form label textarea {
 	width: 100%;
+	padding: 1em 0.5em;
 	box-sizing: border-box;
 	height: 150px;
 	resize: none;
@@ -307,7 +309,7 @@ section.contact #form_container form div.controls  button {
 
 section.contact div#map {
 	display: block;
-	width: 300px;
+	width: 90vw;
 	height: 500px;
 	box-sizing: border-box;
 	margin: 1em auto;

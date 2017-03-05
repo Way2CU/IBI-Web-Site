@@ -18,7 +18,7 @@ section.home {
 	background-image: url(../images/home_page_header.jpg);
 	background-repeat: no-repeat;
 	background-position: center top;
-	min-height: 1080px;
+	min-height: 100vh;
 	padding: 0 calc(~'(100% - 1200px)' / 2 );
 }
 
@@ -194,17 +194,13 @@ section.media h1 {
 	background-image: url(../images/media_header.jpg);
 }
 
-section.research div.articles,
-section.events div.articles,
-section.media div.articles {
+section div.articles {
 	width: 1200px;
 	margin: 0 auto;
 	padding: 3em 0;
 }
 
-section.research div.articles article,
-section.events div.articles article,
-section.media div.articles article {
+section div.articles article {
 	display: inline-block;
 	vertical-align: top;
 	width: 380px;
@@ -218,23 +214,26 @@ section.media div.articles article {
 	box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
 }
 
-section.research div.articles article:nth-of-type(2),
-section.events div.articles article:nth-of-type(2),
-section.media div.articles article:nth-of-type(2) {
+section div.articles article:nth-of-type(2) {
 	margin: 0 26px;
 }
 
-section.research div.articles article img,
-section.events div.articles article img,
-section.media div.articles article img {
+section div.articles article p {
+	margin: 0;
+}
+
+section div.articles article h3 {
+	margin: 0;
+	padding: 0.5em 0;
+}
+
+section div.articles article img {
 	position: absolute;
 	top: 0;
 	left: 0;
 }
 
-section.research div.articles article a,
-section.events div.articles article a,
-section.media div.articles article a {
+section div.articles article a {
 	position: absolute;
 	bottom: 0;
 	left: 50%;
@@ -353,6 +352,7 @@ section.contact #form_container form label input {
 section.contact #form_container form label textarea {
 	width: 100%;
 	box-sizing: border-box;
+	padding: 1em 0.5em;
 	height: 150px;
 	resize: none;
 
@@ -371,8 +371,9 @@ section.contact #form_container form div.controls  button {
 	transition: all 0.3s;
 
 	&:hover {
-		color: @color_text;
-		border-color: @color_text;
+		color: @color_title_text;
+		border-color: @color_title_text;
+		background-color: @color_active_link;
 		cursor: pointer;
 	}
 }

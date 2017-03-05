@@ -48,7 +48,7 @@ nav#main a {
 	padding: (@header_size - 1.2rem) / 2;
 
 	text-decoration: none;
-	color: @color_text;
+	color: fade(@color_text, 50%);
 	font-size: 1.2rem;
 
 	transition: all 0.3s;
@@ -95,4 +95,9 @@ nav#main div:hover nav {
 
 header.home nav#main a {
 	color: @color_title_text;
+}
+
+header.mobile_title.fixed.home nav#main div nav a {
+	color: @color_menu;
+	background-color: fade(@color_title_text, 50%);
 }

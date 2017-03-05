@@ -9,11 +9,12 @@
 @header_size: 4rem;
 @logo_spacing: 0.5rem;
 
-header {
+header.mobile_title {
 	padding: 0;
 	transform: translateZ(0);
 	background-color: @color_title_text;
 	box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
+	text-align: center;
 
 	&.home {
 		background-color: transparent;
@@ -24,7 +25,6 @@ header a.logo {
 	padding: @logo_spacing;
 	display: inline-block;
 	vertical-align: middle;
-	margin-left: calc(~'50% - 100px');
 }
 
 header a.logo svg {
@@ -35,12 +35,23 @@ header a.logo svg {
 }
 
 header a.menu {
-	margin-left: 1em;
-	width: 50px;
-	height: 50px;
-	background-color: red;
-	display: inline-block;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 0;
 	vertical-align: middle;
+	overflow: hidden;
+	padding: @logo_spacing;
+}
+
+header a.menu svg {
+	width: 2em;
+	height: 2em;
+	fill: black;
+}
+
+header.visible a.menu svg {
+	fill: @color_active_link;
 }
 
 div.mobile_menu.visible {
