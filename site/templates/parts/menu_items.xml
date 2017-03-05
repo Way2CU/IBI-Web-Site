@@ -10,22 +10,39 @@
 	</a>
 
 	<!-- About link page -->
+	<div>
 	<a
-		href="URL::make(array(), 'about.xml')"
+		href="javacript:void(0)"
 		cms:eval="href"
-		class="URL::is_active('about.xml')"
-		cms:optional="class"
 		>
 		<cms:text constant="about" />
 	</a>
+		<nav>
+			<a
+				href="URL::make(array(), 'managment.xml')"
+				cms:eval="href"
+				class="URL::is_active('managment.xml')"
+				cms:optional="class"
+				>
+				<cms:text constant="managment" />
+			</a>
 
-	<!-- Profile link page -->
+			<a
+				href="URL::make(array(), 'investment.xml')"
+				cms:eval="href"
+				class="URL::is_active('investment.xml')"
+				cms:optional="class"
+				>
+				<cms:text constant="investment" />
+			</a>
+
+		</nav>
+	</div>
+
+	<!-- News & insights link page -->
 	<div>
 		<a
-			href="URL::make(array(), 'news.xml')"
-			cms:eval="href"
-			class="URL::is_active('news.xml')"
-			cms:optional="class"
+			href="javacript:void(0)"
 			>
 			<cms:text constant="news" />
 		</a>
@@ -60,7 +77,7 @@
 		</nav>
 	</div>
 
-	<!-- Profile link page -->
+	<!-- Contact link page -->
 	<a
 		href="URL::make(array(), 'contact.xml')"
 		cms:eval="href"

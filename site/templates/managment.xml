@@ -6,7 +6,7 @@
 			<title>
 				<cms:text constant="site_title"/>
 				<cms:raw text=" - "/>
-				<cms:text constant="about"/>
+				<cms:text constant="managment"/>
 			</title>
 			<cms:module name="head_tag" action="print_tag"/>
 		</head>
@@ -16,6 +16,7 @@
 				<param name="logo_sprite_icon" value="icon-logo-color"/>
 				<param name="sprite" value="site-sprite.svg"/>
 				<param name="menu" value="parts/menu_items.xml"/>
+				<param name="mobile_menu_sprite_icon" value="icon-menu"/>
 				<param name="fixed" value=""/>
 			</cms:template>
 
