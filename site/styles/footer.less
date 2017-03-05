@@ -62,6 +62,29 @@ footer div.footer_links a.linkedin svg {
 	height: 3em;
 }
 
+/*
+ * Copyright
+*/
+
+footer div.copyright.light {
+	background-color: black;
+	color: @color_title_text;
+	text-align: center;
+	background-position: calc(~'50% - 100px') center;
+}
+
+footer div.copyright.light a {
+	text-decoration: none;
+	color: lighten(@color_active_link, 10%);
+	transition: color 0.3s;
+
+	&:hover {
+			color: lighten(@color_active_link, 50%);
+	}
+}
+
+
+
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
 	footer {
 		padding: 0 0.5em;

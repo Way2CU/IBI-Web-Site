@@ -20,6 +20,7 @@ section.home {
 	background-position: center top;
 	min-height: 100vh;
 	padding: 0 calc(~'(100% - 1200px)' / 2 );
+	position: relative;
 }
 
 section.home article {
@@ -33,6 +34,28 @@ section.home article h1 {
 
 	color: @color_title_text;
 	text-shadow: 2px 2px 2px fade(@color_menu, 55%);
+}
+
+section.home div.copyright.light {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background-color: black;
+	width: 100%;
+	color: @color_title_text;
+	padding: 1em 0;
+	text-align: center;
+	background-position: calc(~'50% - 150px') center;
+}
+
+section.home div.copyright.light a {
+	text-decoration: none;
+	color: lighten(@color_active_link, 10%);
+	transition: color 0.3s;
+
+	&:hover {
+			color: lighten(@color_active_link, 50%);
+	}
 }
 
 /*
