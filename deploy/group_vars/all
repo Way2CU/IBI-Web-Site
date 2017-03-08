@@ -4,7 +4,7 @@ site:
   # subdomain: test
   # alias: domain.com
   root: httpdocs
-  username: ibi
+  username: ibi_site
   caracal_branch: v0.3.x
   # ip_address: 0.0.0.0
   # owner: Some Person
