@@ -292,6 +292,10 @@ section.contact #form_container form label input {
 	padding: 1em 0.5em;
 	border: 1px solid fade(@color_menu, 40%);
 	width: 100%;
+
+	&:focus {
+		border: 1px solid @color_active_link;
+	}
 }
 
 section.contact #form_container form label textarea {
@@ -301,6 +305,10 @@ section.contact #form_container form label textarea {
 	height: 150px;
 	resize: none;
 	border: 1px solid fade(@color_menu, 40%);
+
+	&:focus {
+		border: 1px solid @color_active_link;
+	}
 }
 
 section.contact #form_container form div.controls  button {
