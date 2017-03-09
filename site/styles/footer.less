@@ -41,10 +41,6 @@ footer div.footer_links a:after {
 	background-color: fade(@color_menu, 20%);
 }
 
-footer div.footer_links a:last-of-type:after {
-	display: none;
-}
-
 footer div.footer_links a svg {
 	width: 1em;
 	height: 1em;
@@ -62,6 +58,12 @@ footer div.footer_links a.linkedin svg {
 	height: 3em;
 }
 
+footer div.footer_links p {
+	display: inline-block;
+	vertical-align: middle;
+	padding-left: 0.5em;
+}
+
 /*
  * Copyright
 */
@@ -75,7 +77,7 @@ footer div.copyright.light {
 
 footer div.copyright.light a {
 	text-decoration: none;
-	color: lighten(@color_active_link, 10%);
+	color: #00b2bf;
 	transition: color 0.3s;
 
 	&:hover {

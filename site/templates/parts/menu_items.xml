@@ -11,12 +11,12 @@
 
 	<!-- About link page -->
 	<div>
-	<a
-		href="javacript:void(0)"
-		cms:eval="href"
-		>
-		<cms:text constant="about" />
-	</a>
+		<cms:desktop>
+			<a
+				href="javacript:void(0)">
+				<cms:text constant="about" />
+			</a>
+		</cms:desktop>
 		<nav>
 			<a
 				href="URL::make(array(), 'managment.xml')"
@@ -41,11 +41,13 @@
 
 	<!-- News & insights link page -->
 	<div>
-		<a
-			href="javacript:void(0)"
-			>
-			<cms:text constant="news" />
-		</a>
+		<cms:desktop>
+			<a
+				href="javacript:void(0)"
+				>
+				<cms:text constant="news" />
+			</a>
+		</cms:desktop>
 
 		<nav>
 			<a
