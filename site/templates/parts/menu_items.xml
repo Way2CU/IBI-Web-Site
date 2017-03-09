@@ -13,9 +13,7 @@
 	<div>
 		<cms:desktop>
 			<a
-				href="javacript:void(0)"
-				cms:eval="href"
-				>
+				href="javacript:void(0)">
 				<cms:text constant="about" />
 			</a>
 		</cms:desktop>
