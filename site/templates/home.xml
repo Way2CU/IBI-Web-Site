@@ -8,14 +8,26 @@
 		</head>
 
 		<body>
-			<cms:template file="stock/header_generic.xml">
-				<param name="logo_sprite_icon" value="icon-logo-white"/>
-				<param name="sprite" value="site-sprite.svg"/>
-				<param name="mobile_menu_sprite_icon" value="icon-menu"/>
-				<param name="menu" value="parts/menu_items.xml"/>
-				<param name="fixed" value=""/>
-				<param name="class" value="home"/>
-			</cms:template>
+			<cms:desktop>
+				<cms:template file="stock/header_generic.xml">
+					<param name="logo_sprite_icon" value="icon-logo-white"/>
+					<param name="sprite" value="site-sprite.svg"/>
+					<param name="mobile_menu_sprite_icon" value="icon-menu"/>
+					<param name="menu" value="parts/menu_items.xml"/>
+					<param name="fixed" value=""/>
+					<param name="class" value="home"/>
+				</cms:template>
+			</cms:desktop>
+			<cms:mobile>
+				<cms:template file="stock/header_generic.xml">
+					<param name="logo_sprite_icon" value="icon-logo-color"/>
+					<param name="sprite" value="site-sprite.svg"/>
+					<param name="mobile_menu_sprite_icon" value="icon-menu"/>
+					<param name="menu" value="parts/menu_items.xml"/>
+					<param name="fixed" value=""/>
+					<param name="class" value="home"/>
+				</cms:template>
+			</cms:mobile>
 		</body>
 		<section class="home">
 			<cms:module
