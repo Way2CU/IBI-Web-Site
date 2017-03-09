@@ -8,11 +8,11 @@
 
 footer {
 	background-color: @color_footer;
-	padding: 1em;
 }
 
 footer div.footer_links {
 	margin: 0 auto;
+	padding: 1em;
 }
 
 footer div.footer_links a {
@@ -26,8 +26,9 @@ footer div.footer_links a {
 	margin-bottom: 1em;
 }
 
-footer div.footer_links a:last-of-type {
-	border: none;
+footer div.footer_links p {
+	display: block;
+	padding: 0 1em;
 }
 
 footer div.footer_links a svg {
@@ -45,4 +46,14 @@ footer div.footer_links a.linkedin {
 footer div.footer_links a.linkedin svg {
 	width: 2em;
 	height: 2em;
+}
+
+footer div.copyright.light {
+	background-color: @color_text;
+	color: @color_title_text;
+}
+
+footer div.copyright.light a {
+	text-decoration: none;
+	color: #00b2bf;
 }

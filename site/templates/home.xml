@@ -29,8 +29,8 @@
 			</cms:module>
 
 			<cms:desktop>
-				<footer>
 					<!-- Copyright -->
+				<footer>
 					<cms:template file="stock/copyright.xml">
 							<param name="holder" value="copyright_holder"/>
 							<param name="text" value="copyright_text"/>
@@ -40,7 +40,6 @@
 			</cms:desktop>
 		</section>
 
-		</footer>
 		<cms:mobile>
 			<footer>
 				<cms:template file="parts/footer.xml" />
