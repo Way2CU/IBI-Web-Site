@@ -36,7 +36,6 @@ section.home article h1 {
 */
 
 h1.styled {
-	padding: 0.5em;
 	margin: 0;
 	color: @color_title_text;
 	text-align: center;
@@ -44,6 +43,8 @@ h1.styled {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: 100% auto;
+	padding: calc(~'((100vw / 3.6) - 1em) / 2') 0;
+	line-height: 100%;
 	&.profile {
 		background-image: url(../images/mobile_profile_header.jpg);
 	}
