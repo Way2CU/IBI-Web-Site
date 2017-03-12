@@ -67,6 +67,9 @@ footer div.footer_links p {
 /*
  * Copyright
 */
+section.home footer div.copyright.light {
+	background-color: fade(@color_menu, 50%);
+}
 
 footer div.copyright.light {
 	background-color: black;
@@ -85,6 +88,13 @@ footer div.copyright.light a {
 	}
 }
 
+section.home footer div.copyright.light a {
+	color: lighten(@color_active_link, 50%);
+
+	&:hover {
+		color: #00b2bf;
+	}
+}
 
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
