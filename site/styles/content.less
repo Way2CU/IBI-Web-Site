@@ -121,7 +121,7 @@ section.profile article:nth-of-type(4) {
 }
 
 /*
- * About page
+ * About page (managment)
 */
 
 section.managment h1.managment {
@@ -166,7 +166,7 @@ section.managment article h3 {
 }
 
 /*
- * News page
+ * News page(investment)
 */
 
 section.news h1 {
@@ -201,7 +201,8 @@ section.news div.features ul li svg {
 	height: 6em;
 }
 
-section.news article {
+section.new article {
+	background-color: @color_active_link;
 	padding: 0 calc(~'(100% - 800px)' / 2 );
 	text-align: center;
 	color: @color_title;
@@ -213,7 +214,7 @@ section.news article p {
 }
 
 /*
- * media page
+ * Media page
 */
 section.media h1 {
 	background-image: url(../images/media_header.jpg);
@@ -414,11 +415,20 @@ section.contact div#map {
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+	section.home {
+		min-height: 100vw;
+	}
+
+	h1.styled {
+		background-size: 100% auto;
+		padding: 1em;
+	}
+
 	section.profile article:nth-of-type(4),
 	section.profile article:nth-of-type(2) {
-		background-position: calc(~'(50% - 100px)') @section_spacing, top center;
-		padding-left: calc(~'(50% - 350px) + 1rem');
-		padding-right: calc(~'35% + 1rem');
+		background-position: calc(~'(50% - 180px)') @section_spacing, 65% bottom;
+		padding-left: 2em;
+		padding-right: 50%;
 	}
 
 	section.profile article:nth-of-type(3) {
@@ -447,6 +457,12 @@ section.contact div#map {
 
 	section.news div.features {
 		width: auto;
+	}
+
+	section.news article {
+		padding: 0 1em;
+		text-align: center;
+		padding-bottom: 1em;
 	}
 
 	section.research div.articles,
