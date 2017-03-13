@@ -9,47 +9,26 @@ Site.map = function (langitude, latitude) {
     scrollwheel: false,
     styles: [
 			    {
-			        "featureType": "landscape.natural",
-			        "elementType": "geometry.fill",
+			        "featureType": "administrative",
+			        "elementType": "labels.text.fill",
 			        "stylers": [
 			            {
-			                "visibility": "on"
-			            },
+			                "color": "#444444"
+			            }
+			        ]
+			    },
+			    {
+			        "featureType": "landscape",
+			        "elementType": "all",
+			        "stylers": [
 			            {
-			                "color": "#e0efef"
+			                "color": "#f2f2f2"
 			            }
 			        ]
 			    },
 			    {
 			        "featureType": "poi",
-			        "elementType": "geometry.fill",
-			        "stylers": [
-			            {
-			                "visibility": "on"
-			            },
-			            {
-			                "hue": "#1900ff"
-			            },
-			            {
-			                "color": "#c0e8e8"
-			            }
-			        ]
-			    },
-			    {
-			        "featureType": "road",
-			        "elementType": "geometry",
-			        "stylers": [
-			            {
-			                "lightness": 100
-			            },
-			            {
-			                "visibility": "simplified"
-			            }
-			        ]
-			    },
-			    {
-			        "featureType": "road",
-			        "elementType": "labels",
+			        "elementType": "all",
 			        "stylers": [
 			            {
 			                "visibility": "off"
@@ -57,14 +36,59 @@ Site.map = function (langitude, latitude) {
 			        ]
 			    },
 			    {
-			        "featureType": "transit.line",
+			        "featureType": "poi.park",
 			        "elementType": "geometry",
 			        "stylers": [
 			            {
 			                "visibility": "on"
+			            }
+			        ]
+			    },
+			    {
+			        "featureType": "poi.school",
+			        "elementType": "geometry",
+			        "stylers": [
+			            {
+			                "visibility": "on"
+			            }
+			        ]
+			    },
+			    {
+			        "featureType": "road",
+			        "elementType": "all",
+			        "stylers": [
+			            {
+			                "saturation": -100
 			            },
 			            {
-			                "lightness": 700
+			                "lightness": 45
+			            }
+			        ]
+			    },
+			    {
+			        "featureType": "road.highway",
+			        "elementType": "all",
+			        "stylers": [
+			            {
+			                "visibility": "simplified"
+			            }
+			        ]
+			    },
+			    {
+			        "featureType": "road.arterial",
+			        "elementType": "labels.icon",
+			        "stylers": [
+			            {
+			                "visibility": "off"
+			            }
+			        ]
+			    },
+			    {
+			        "featureType": "transit",
+			        "elementType": "all",
+			        "stylers": [
+			            {
+			                "visibility": "off"
 			            }
 			        ]
 			    },
@@ -73,7 +97,10 @@ Site.map = function (langitude, latitude) {
 			        "elementType": "all",
 			        "stylers": [
 			            {
-			                "color": "#7dcdcd"
+			                "color": "#b9d7e3"
+			            },
+			            {
+			                "visibility": "on"
 			            }
 			        ]
 			    }
