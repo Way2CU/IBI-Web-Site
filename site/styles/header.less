@@ -44,16 +44,38 @@ nav#main {
 nav#main a {
 	display: inline-block;
 	vertical-align: middle;
-	padding: (@header_size - 1.2rem) / 2;
+	position: relative;
+	overflow: hidden;
 
+	padding: (@header_size - 1.2rem) / 2;
 	text-decoration: none;
 	color: fade(@color_text, 50%);
 	font-size: 1.2rem;
 
 	transition: all 0.3s;
+	transition-timing-function: ease-out;
+
+	&:before {
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		opacity: 0;
+
+		background-color: @color_active_link;
+		transform: translateX(-100%);
+		transition: all 0.3s;
+		z-index: -1;
+	}
+
+	&:hover:before {
+		transform: translateX(0);
+		opacity: 1;
+	}
 
 	&:hover {
-		background-color: @color_active_link;
 		color: @color_title_text;
 	}
 
@@ -81,27 +103,61 @@ nav#main div nav {
 
 	background-color: white;
 	transition: 0.3s opacity;
-	transition-delay: 1s;
 	pointer-events: none;
+}
+
+nav#main div:hover nav {
+	opacity: 1;
+	pointer-events: auto;
 }
 
 nav#main div nav a {
 	display: block;
 	padding: 1em;
 	text-align: initial;
-}
+	position: relative;
+	z-index: 0;
 
-nav#main div:hover nav {
-	opacity: 1;
-	transition-delay: 0s;
-	pointer-events: auto;
+	&:hover {
+		color: @color_title_text;
+	}
+
+	&:before {
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		opacity: 0;
+
+		background-color: @color_active_link;
+		transform: translateX(-100%);
+		transition: all 0.3s;
+		z-index: -1;
+	}
+
+	&:hover:before {
+		transform: translateX(0);
+		opacity: 1;
+	}
 }
 
 header.home nav#main a {
 	color: @color_title_text;
+
+	&:hover {
+		color: @color_title_text;
+	}
 }
 
 header.mobile_title.fixed.home nav#main div nav a {
 	color: @color_menu;
 	background-color: fade(@color_title_text, 50%);
+
+	&:hover {
+		color: @color_title_text;
+	}
 }
+
+
