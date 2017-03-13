@@ -11,6 +11,13 @@
 
 	<!-- About link page -->
 	<div>
+		<cms:mobile>
+			<input id="menu_about" type="checkbox"/>
+			<label for="menu_about">
+				<cms:text constant="about" />
+			</label>
+		</cms:mobile>
+
 		<cms:desktop>
 			<a
 				href="javacript:void(0)">
@@ -41,10 +48,16 @@
 
 	<!-- News & insights link page -->
 	<div>
+		<cms:mobile>
+			<input id="menu_news" type="checkbox"/>
+			<label for="menu_news">
+				<cms:text constant="news" />
+			</label>
+		</cms:mobile>
+
 		<cms:desktop>
 			<a
-				href="javacript:void(0)"
-				>
+				href="javacript:void(0)">
 				<cms:text constant="news" />
 			</a>
 		</cms:desktop>
