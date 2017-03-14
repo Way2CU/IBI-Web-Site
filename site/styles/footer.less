@@ -64,38 +64,18 @@ footer div.footer_links p {
 	padding-left: 0.5em;
 }
 
-/*
- * Copyright
-*/
-section.home footer div.copyright.light {
-	background-color: fade(@color_menu, 50%);
-}
-
-footer div.copyright.light {
-	background-color: black;
-	color: @color_title_text;
-	text-align: center;
-	background-position: calc(~'50% - 100px') center;
-}
-
-footer div.copyright.light a {
-	text-decoration: none;
+footer div.footer_links p > a {
+	padding: 0;
 	color: #00b2bf;
-	transition: color 0.3s;
-
-	&:hover {
-			color: lighten(@color_active_link, 50%);
-	}
 }
 
-section.home footer div.copyright.light a {
-	color: lighten(@color_active_link, 50%);
-
-	&:hover {
-		color: #00b2bf;
-	}
+footer div.footer_links p > a:after {
+	display: none;
 }
 
+/*
+ * Tablet footer version
+*/
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
 	footer {
@@ -104,6 +84,12 @@ section.home footer div.copyright.light a {
 
 	footer div.footer_links {
 		width: auto;
+	}
+
+	footer div.footer_links > p {
+		display: block;
+		text-align: center;
+		margin: 0;
 	}
 
 }
