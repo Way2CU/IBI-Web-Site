@@ -39,29 +39,11 @@
 				<param name="title" value=""/>
 				<param name="title_tag" value="h1"/>
 			</cms:module>
-
-			<cms:desktop>
-					<!-- Copyright -->
-				<footer>
-					<cms:template file="stock/copyright.xml">
-							<param name="holder" value="copyright_holder"/>
-							<param name="text" value="copyright_text"/>
-							<param name="light" value=""/>
-					</cms:template>
-				</footer>
-			</cms:desktop>
 		</section>
 
 		<cms:mobile>
 			<footer>
 				<cms:template file="parts/footer.xml" />
-
-				<!-- Copyright -->
-				<cms:template file="stock/copyright.xml">
-						<param name="holder" value="copyright_holder"/>
-						<param name="text" value="copyright_text"/>
-						<param name="light" value=""/>
-				</cms:template>
 			</footer>
 		</cms:mobile>
 	</html>
