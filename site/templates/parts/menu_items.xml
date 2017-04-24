@@ -20,7 +20,7 @@
 
 		<cms:desktop>
 			<a
-				href="javacript:void(0)">
+				href="javascript:void(0)">
 				<cms:text constant="about" />
 			</a>
 		</cms:desktop>
@@ -57,7 +57,7 @@
 
 		<cms:desktop>
 			<a
-				href="javacript:void(0)">
+				href="javascript:void(0)">
 				<cms:text constant="news" />
 			</a>
 		</cms:desktop>
