@@ -41,10 +41,8 @@
 			</cms:module>
 		</section>
 
-		<cms:mobile>
-			<footer>
-				<cms:template file="parts/footer.xml" />
-			</footer>
-		</cms:mobile>
+		<footer>
+			<cms:template file="parts/footer.xml" />
+		</footer>
 	</html>
 </document>
