@@ -25,6 +25,13 @@
 					<cms:text constant="investment"/>
 				</h1>
 
+				<cms:module
+					name="articles"
+					action="show"
+					text_id="features_article"
+					template="stock/article_generic.xml"
+					/>
+
 				<div class="features">
 					<ul>
 						<cms:module
@@ -37,14 +44,6 @@
 						</cms:module>
 					</ul>
 				</div>
-
-				<cms:module
-					name="articles"
-					action="show"
-					text_id="features_article"
-					template="stock/article_generic.xml"
-					/>
-
 			</section>
 			<footer>
 				<cms:template file="parts/footer.xml" />
