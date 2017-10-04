@@ -215,14 +215,25 @@ section.news div.features ul li {
 	display: inline-block;
 	vertical-align: top;
 	box-sizing: border-box;
-	padding: 0 1em;
-	width: 25%;
-	margin-bottom: 1em;
+	width: 22%;
+	margin-bottom: 2em;
+	margin-left: 2rem;
+	box-shadow: 0px 0px 3px 1px fade(@color_text, 50%);
+
+	p {
+		color: @color_title_text;
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+		background-color: @color_active_link;
+		margin: 0;
+		min-height: 30px;
+	}
 }
 
 section.news div.features ul li svg {
 	width: 6em;
 	height: 6em;
+	padding: 2rem 0;
 }
 
 section.news article {
