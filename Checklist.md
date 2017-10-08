@@ -4,31 +4,31 @@ All of these need to be checked manually, changed and then committed. System wil
 
 - Site specific items:
 	- [x] `system_init.xml` file contains all the modules used;
-	- [ ] Deployment script `group_vars/all` file is configured;
-	- [ ] Deployment `hosts.txt` file is configured;
+	- [x] Deployment script `group_vars/all` file is configured;
+	- [x] Deployment `hosts.txt` file is configured;
 	- [x] All the languages site is targeting are configured in `config.php`;
 	- [x] Site title is properly defined;
-	- [ ] No errors or warnings are reported in the log file;
-	- [ ] Templates for registering and recovering user password are created and selected;
+	- [x] No errors or warnings are reported in the log file;
+	- [x] Templates for registering and recovering user password are created and selected;
 	- [x] PNG images are optimized using `optipng` command;
 	- [x] JPEG images are converted from original PNG and optimized using `guetzli` command;
 	- [x] SVG images are cleaned and optimized;
-	> - [ ] Site has favicon specified in different sizes (16, 32, 64);
+	> - [x] Site has favicon specified in different sizes (16, 32, 64);
 	- [x] All active elements of the site have `:hover` and `:focus` styles defined;
 	- [x] Site has copyright;
 	- [x] `README.md` file updated appropriately with licensing information;
 	- [x] Code in `main.js` targets all pages. Code meant for individual pages is in separate files;
 	- [x] Styles are written to target LTR by default with RTL modifications, even on RTL-only sites.
 - Contact form:
-	- [ ] SendGrid API access is configured;
-	- [ ] Mandrill API access is configured;
-	- [ ] SMTP credentials are configured and working;
-	- [ ] Default sender email;
-	- [ ] Default recipient;
+	- [x] SendGrid API access is configured;
+	> - [x] Mandrill API access is configured;
+	> - [x] SMTP credentials are configured and working;
+	- [x] Default sender email;
+	- [x] Default recipient;
 	- [x] Forms have honeypot field;
 	- [x] Templates for each form are created and assigned to form;
 	- [x] Templates have subject properly defined;
-	- [ ] Form submits and client/developer receives email.
+	- [x] Form submits and client/developer receives email.
 - Shop:
 	> - [ ] Desired payment method is enabled and configured;
 	> - [ ] Default warehouse is created;
