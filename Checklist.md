@@ -30,10 +30,10 @@ All of these need to be checked manually, changed and then committed. System wil
 	- [x] Templates have subject properly defined;
 	- [x] Form submits and client/developer receives email.
 - Shop:
-	> - [ ] Desired payment method is enabled and configured;
-	> - [ ] Default warehouse is created;
-	> - [ ] Default currency is selected;
-	> - [ ] Contact form template for transaction is created and selected;
-	> - [ ] Shop is not in testing mode.
+	> - [x] Desired payment method is enabled and configured;
+	> - [x] Default warehouse is created;
+	> - [x] Default currency is selected;
+	> - [x] Contact form template for transaction is created and selected;
+	> - [x] Shop is not in testing mode.
 - Articles:
 	- [x] Each article has a title even if it's not used;
