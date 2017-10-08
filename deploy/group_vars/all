@@ -1,15 +1,15 @@
 ---
 site:
-  domain: ibi.co.il
-  # subdomain: test
-  # alias: domain.com
-  root: httpdocs
-  username: ibi_site
-  caracal_branch: v0.3.x
-  # ip_address: 0.0.0.0
-  # owner: Some Person
-  # plan: Unlimited
-  # database_type: 'mysql'
+    domain: ibi.co.il
+    # subdomain: test
+    # alias: domain.com
+    root: httpdocs
+    username: ibi_site
+    caracal_branch: v0.3.x
+    # ip_address: 0.0.0.0
+    # owner: Some Person
+    # plan: Unlimited
+    # database_type: 'mysql'
 
 local_site_directory: ../site
 subscription_directory: "{{ plesk_vhost_directory }}/{{ site.domain }}"
