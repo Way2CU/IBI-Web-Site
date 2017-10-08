@@ -33,6 +33,7 @@
 						/>
 
 				</div>
+			</section>
 			<footer>
 				<cms:template file="parts/footer.xml" />
 			</footer>
