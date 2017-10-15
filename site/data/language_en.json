@@ -12,7 +12,8 @@
     "mail": "E-mail: info@ibi-ils-partners.com",
     "phone":"+972-3-519-9900",
     "footer_phone": "Tel. +972-3-519-9900",
-    "copyright_ibi": "© IBI ILS Partners Ltd. 2017 </br> Developed by <a href=\"http://way2cu.com\" target=\"_blank\">Way2CU.</a>",
+    "copyright_ibi": "© IBI ILS Partners Ltd. 2017",
+    "copyright_way2cu": "Developed by <a href=\"http://way2cu.com\" target=\"_blank\">Way2CU.</a>",
     "read_more":"READ MORE",
     "send": "Send my form"
 }

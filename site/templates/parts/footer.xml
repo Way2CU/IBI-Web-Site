@@ -35,5 +35,8 @@
 			<cms:text constant="copyright_ibi" />
 		</p>
 
+		<p>
+			<cms:text constant="copyright_way2cu"/>
+		</p>
 	</div>
 </document>
