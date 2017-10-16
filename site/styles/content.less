@@ -67,16 +67,18 @@ section.home div.copyright.light a {
 h1.styled {
 	padding: 3.5rem;
 	margin: 0;
-	color: @color_active_link;
 	text-align: center;
 	text-transform: uppercase;
+	font-size: 2.5rem;
+	color: @color_title_text;
 
 	background-position: center;
 	background-repeat: no-repeat;
 
 	&.profile {
 		background-color: @color_footer;
-		font-size: 2.5rem;
+		color: @color_active_link;
+		font-family: almoni-light;
 	}
 }
 
@@ -151,6 +153,7 @@ section.profile article:nth-of-type(4) {
 
 section.managment h1.managment {
 	background-image: url(../images/managment_header.jpg);
+	color: @color_title_text;
 }
 
 section.managment article {
@@ -200,6 +203,7 @@ section.managment article h3 {
 section.news h1 {
 	background-image: url(../images/investments.jpg);
 	background-size: cover;
+	color: @color_title_text;
 }
 
 section.news div.features {
