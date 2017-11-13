@@ -8,7 +8,7 @@
 
 footer {
 	background-color: @color_footer;
-	border-top: 2px solid @color_active_link;
+	border-top: 4px solid @color_active_link;
 }
 
 footer div.footer_links {
@@ -45,6 +45,10 @@ footer div.footer_links > p:after {
 	width: 1px;
 	height: 80px;
 	background-color: fade(@color_menu, 20%);
+}
+
+footer div.footer_links > p:last-of-type:after {
+	display: none;
 }
 
 footer div.footer_links a svg {
