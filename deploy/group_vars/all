@@ -1,10 +1,10 @@
 ---
 site:
-    domain: ibi.co.il
+    domain: ibi-ils.com
     # subdomain: test
     # alias: domain.com
     root: httpdocs
-    username: ibi_site
+    username: ibi_ils
     caracal_branch: v0.4
     # ip_address: 0.0.0.0
     # owner: Some Person
