@@ -82,9 +82,15 @@ h1.styled {
 	}
 }
 
+
+
 section.profile article {
 	padding: 5em calc(~'(100% - 800px)' / 2);
 	color: @color_text;
+
+	&:first-of-type {
+		text-align: center;
+	}
 }
 
 section.profile article h2 {
@@ -243,6 +249,8 @@ section.news div.features ul li svg {
 	width: 6em;
 	height: 6em;
 	padding: 2rem 0;
+	fill: #fff;
+	stroke: #001f5b
 }
 
 section.news article {
