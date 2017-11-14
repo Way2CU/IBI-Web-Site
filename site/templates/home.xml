@@ -10,7 +10,7 @@
 		<body>
 			<cms:desktop>
 				<cms:template file="stock/header_generic.xml">
-					<param name="logo_sprite_icon" value="icon-logo-white"/>
+					<param name="logo" value="logo-white"/>
 					<param name="sprite" value="site-sprite.svg"/>
 					<param name="mobile_menu_sprite_icon" value="icon-menu"/>
 					<param name="menu" value="parts/menu_items.xml"/>
@@ -20,7 +20,7 @@
 			</cms:desktop>
 			<cms:mobile>
 				<cms:template file="stock/header_generic.xml">
-					<param name="logo_sprite_icon" value="icon-logo-color"/>
+					<param name="logo" value="logo-color"/>
 					<param name="sprite" value="site-sprite.svg"/>
 					<param name="mobile_menu_sprite_icon" value="icon-menu"/>
 					<param name="menu" value="parts/menu_items.xml"/>
