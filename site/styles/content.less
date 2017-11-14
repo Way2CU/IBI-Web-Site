@@ -284,9 +284,11 @@ section div.articles {
 }
 
 section div.articles article {
+	.elements-in-row(3,1rem);
+
+	margin-bottom: 2rem;
 	display: inline-block;
 	vertical-align: top;
-	width: 380px;
 	border: 1px solid fade(@color_menu, 20%);
 	min-height: 500px;
 	padding-top: 200px;
@@ -295,10 +297,6 @@ section div.articles article {
 	box-sizing: border-box;
 	padding: 200px 0.5em 0 0.5em;
 	box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
-}
-
-section div.articles article:nth-of-type(2) {
-	margin: 0 26px;
 }
 
 section div.articles article p {
