@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE document SYSTEM "../units/schema/language.dtd">
+<document>
+	<!-- white logo is applied only on home - desktop - page,
+		 so condition needs to be met in order to use white logo
+		 which is to home.xml page to be active and that is not mobile version:
+
+		 URL::is_active('home.xml') and !_MOBILE_VERSION
+	-->
+	<cms:if condition="URL::is_active('home.xml') and !_MOBILE_VERSION">
+		<cms:template file="stock/header_generic.xml">
+			<param name="logo" value="logo-white.svg"/>
+			<param name="sprite" value="site-sprite.svg"/>
+			<param name="mobile_menu_sprite_icon" value="icon-menu"/>
+			<param name="menu" value="parts/menu_items.xml"/>
+			<param name="fixed" value=""/>
+			<param name="class" value="home"/>
+		</cms:template>
+	</cms:if>
+
+	<cms:if condition="!URL::is_active('home.xml') or _MOBILE_VERSION">
+		<cms:template file="stock/header_generic.xml">
+			<param name="logo" value="logo-color.svg"/>
+			<param name="sprite" value="site-sprite.svg"/>
+			<param name="mobile_menu_sprite_icon" value="icon-menu"/>
+			<param name="menu" value="parts/menu_items.xml"/>
+			<param name="fixed" value=""/>
+		</cms:template>
+	</cms:if>
+</document>

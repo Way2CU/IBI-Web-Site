@@ -8,26 +8,7 @@
 		</head>
 
 		<body>
-			<cms:desktop>
-				<cms:template file="stock/header_generic.xml">
-					<param name="logo" value="logo-white.svg"/>
-					<param name="sprite" value="site-sprite.svg"/>
-					<param name="mobile_menu_sprite_icon" value="icon-menu"/>
-					<param name="menu" value="parts/menu_items.xml"/>
-					<param name="fixed" value=""/>
-					<param name="class" value="home"/>
-				</cms:template>
-			</cms:desktop>
-			<cms:mobile>
-				<cms:template file="stock/header_generic.xml">
-					<param name="logo" value="logo-color.svg"/>
-					<param name="sprite" value="site-sprite.svg"/>
-					<param name="mobile_menu_sprite_icon" value="icon-menu"/>
-					<param name="menu" value="parts/menu_items.xml"/>
-					<param name="fixed" value=""/>
-					<param name="class" value="home"/>
-				</cms:template>
-			</cms:mobile>
+			<cms:template file="parts/header.xml"/>
 
 			<section class="home">
 				<cms:module
