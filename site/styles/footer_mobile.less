@@ -10,12 +10,12 @@ footer {
 	background-color: @color_footer;
 }
 
-footer div.footer_links {
+footer nav {
 	margin: 0 auto;
 	padding: 1em;
 }
 
-footer div.footer_links a {
+footer nav > a {
 	display: block;
 	text-decoration: none;
 	color: @color_menu;
@@ -25,12 +25,17 @@ footer div.footer_links a {
 	margin-bottom: 1em;
 }
 
-footer div.footer_links p {
+footer nav > p:not(:last-of-type) {
+	border-bottom: 1px solid @color_menu;
+	padding-bottom: 0.5em;
+}
+
+footer nav p {
 	display: block;
 	padding: 0 1em;
 }
 
-footer div.footer_links a svg {
+footer nav a svg {
 	width: 1.5em;
 	height: 1.5em;
 	display: inline-block;
@@ -38,16 +43,16 @@ footer div.footer_links a svg {
 	padding-right: 0.5em;
 }
 
-footer div.footer_links a.linkedin {
+footer nav a#linkedin {
 	border: none;
 }
 
-footer div.footer_links a.linkedin svg {
+footer nav a#linkedin svg {
 	width: 2em;
 	height: 2em;
 }
 
-footer div.footer_links p > a {
+footer nav p > a {
 	padding: 0;
 	color: #00b2bf;
 }

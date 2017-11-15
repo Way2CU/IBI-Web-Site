@@ -1,42 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE document SYSTEM "../units/schema/language.dtd">
 <document>
-	<div class="footer_links">
-		<!-- Linkdin link -->
-		<a href="https://www.linkedin.com/company-beta/17920748" class="linkedin">
-			<cms:svg file="site-sprite.svg" symbol="icon-linkedin"/>
-		</a>
+	<footer>
+		<nav>
+			<!-- Linkdin link -->
+			<a href="https://www.linkedin.com/company-beta/17920748" id="linkedin" class="footer_nav_links">
+				<cms:svg file="site-sprite.svg" symbol="icon-linkedin"/>
+			</a>
 
-		<!-- Link to google maps -->
-		<a href="https://www.google.com/maps/place/Ahad+Ha'Am+St+9,+Tel+Aviv-Yafo,+Israel/@32.0637223,34.7674314,17z/data=!3m1!4b1!4m15!1m9!4m8!1m0!1m6!1m2!1s0x151d4c9cbe9b3d65:0xde756930cfc2928c!2sAhad+Ha'Am+St+9,+Tel+Aviv-Yafo,+Israel!2m2!1d34.7696201!2d32.0637223!3m4!1s0x151d4c9cbe9b3d65:0xde756930cfc2928c!8m2!3d32.0637223!4d34.7696201">
-			<cms:module
-				name="articles"
-				action="show"
-				text_id="footer_article"
-				template="stock/article_generic.xml"
-				/>
-		</a>
+			<!-- Link to google maps -->
+			<a href="https://www.google.com/maps/place/Ahad+Ha'Am+St+9,+Tel+Aviv-Yafo,+Israel/@32.0637223,34.7674314,17z/data=!3m1!4b1!4m15!1m9!4m8!1m0!1m6!1m2!1s0x151d4c9cbe9b3d65:0xde756930cfc2928c!2sAhad+Ha'Am+St+9,+Tel+Aviv-Yafo,+Israel!2m2!1d34.7696201!2d32.0637223!3m4!1s0x151d4c9cbe9b3d65:0xde756930cfc2928c!8m2!3d32.0637223!4d34.7696201" class="footer_nav_links">
+				<cms:module
+					name="articles"
+					action="show"
+					text_id="footer_article"
+					template="stock/article_generic.xml"
+					/>
+			</a>
 
-		<!-- Mail with icon -->
-		<a href="mailto:info@ibi-ils-partners.com">
-			<cms:svg file="site-sprite.svg" symbol="icon-email" />
-			<cms:text constant="mail"/>
-		</a>
+			<!-- Mail with icon -->
+			<a href="mailto:info@ibi-ils-partners.com" class="footer_nav_links">
+				<cms:svg file="site-sprite.svg" symbol="icon-email" />
+				<cms:text constant="mail"/>
+			</a>
 
-		<!-- Link to phone with icon -->
-		<a
-			href="'tel:'.urlencode(Language::get_Text('phone'))"
-			cms:eval="href"
-			class="phone"
-			>
-			<cms:svg file="site-sprite.svg" symbol="icon-phone"/>
-			<cms:text constant="footer_phone"/>
-		</a>
+			<!-- Link to phone with icon -->
+			<a
+				href="'tel:'.urlencode(Language::get_Text('phone'))"
+				cms:eval="href"
+				class="phone footer_nav_links"
+				>
+				<cms:svg file="site-sprite.svg" symbol="icon-phone"/>
+				<cms:text constant="footer_phone"/>
+			</a>
 
-		<p>
-			<cms:text constant="copyright_ibi" />
-		</p>
+			<p class="footer_nav_links">
+				<cms:text constant="copyright_ibi" />
+			</p>
 
-		<p>
-			<cms:text constant="copyright_way2cu"/>
-		</p>
-	</div>
+			<p class="footer_nav_links">
+				<cms:text constant="copyright_way2cu"/>
+			</p>
+		</nav>
+	</footer>
 </document>

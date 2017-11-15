@@ -35,9 +35,7 @@
 				</div>
 			</section>
 
-			<footer>
-				<cms:template file="parts/footer.xml" />
-			</footer>
+			<cms:template file="parts/footer.xml" />
 		</body>
 	</html>
 </document>
