@@ -10,7 +10,7 @@
 		<body>
 			<cms:desktop>
 				<cms:template file="stock/header_generic.xml">
-					<param name="logo" value="logo-white"/>
+					<param name="logo" value="logo-white.svg"/>
 					<param name="sprite" value="site-sprite.svg"/>
 					<param name="mobile_menu_sprite_icon" value="icon-menu"/>
 					<param name="menu" value="parts/menu_items.xml"/>
@@ -20,7 +20,7 @@
 			</cms:desktop>
 			<cms:mobile>
 				<cms:template file="stock/header_generic.xml">
-					<param name="logo" value="logo-color"/>
+					<param name="logo" value="logo-color.svg"/>
 					<param name="sprite" value="site-sprite.svg"/>
 					<param name="mobile_menu_sprite_icon" value="icon-menu"/>
 					<param name="menu" value="parts/menu_items.xml"/>
@@ -28,21 +28,22 @@
 					<param name="class" value="home"/>
 				</cms:template>
 			</cms:mobile>
-		</body>
-		<section class="home">
-			<cms:module
-				name="articles"
-				action="show"
-				text_id="home_page"
-				template="stock/article_generic.xml"
-				>
-				<param name="title" value=""/>
-				<param name="title_tag" value="h1"/>
-			</cms:module>
-		</section>
 
-		<footer>
-			<cms:template file="parts/footer.xml" />
-		</footer>
+			<section class="home">
+				<cms:module
+					name="articles"
+					action="show"
+					text_id="home_page"
+					template="stock/article_generic.xml"
+					>
+					<param name="title" value=""/>
+					<param name="title_tag" value="h1"/>
+				</cms:module>
+			</section>
+
+			<footer>
+				<cms:template file="parts/footer.xml" />
+			</footer>
+		</body>
 	</html>
 </document>

@@ -15,7 +15,7 @@
 
 		<body>
 			<cms:template file="stock/header_generic.xml">
-				<param name="logo" value="logo-color"/>
+				<param name="logo" value="logo-color.svg"/>
 				<param name="sprite" value="site-sprite.svg"/>
 				<param name="menu" value="parts/menu_items.xml"/>
 				<param name="mobile_menu_sprite_icon" value="icon-menu"/>
@@ -33,10 +33,10 @@
 						text_id="contact_form"
 						/>
 				</div>
-				<div id="map">
 
-				</div>
+				<div id="map"/>
 			</section>
+
 			<footer>
 				<cms:template file="parts/footer.xml" />
 			</footer>

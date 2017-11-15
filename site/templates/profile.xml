@@ -13,7 +13,7 @@
 
 		<body>
 			<cms:template file="stock/header_generic.xml">
-				<param name="logo" value="logo-color"/>
+				<param name="logo" value="logo-color.svg"/>
 				<param name="sprite" value="site-sprite.svg"/>
 				<param name="menu" value="parts/menu_items.xml"/>
 				<param name="mobile_menu_sprite_icon" value="icon-menu"/>
@@ -40,6 +40,7 @@
 					<param name="title_tag" value="h2"/>
 				</cms:module>
 			</section>
+
 			<footer>
 				<cms:template file="parts/footer.xml" />
 			</footer>
