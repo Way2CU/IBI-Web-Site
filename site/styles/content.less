@@ -11,7 +11,7 @@
 */
 
 section {
-	padding-top: 95px;
+	padding-top: 5.5rem;
 }
 
 section.home {
@@ -219,7 +219,7 @@ section.news div.features {
 }
 
 section.news div.features ul {
-	padding: 2em 0;
+	padding: 2em 2em;
 	padding-bottom: 0;
 	margin: 0;
 	list-style: none;
@@ -227,18 +227,17 @@ section.news div.features ul {
 }
 
 section.news div.features ul li {
+	.elements-in-row(4, 2rem);
+
+	margin-bottom: 2rem;
 	display: inline-block;
 	vertical-align: top;
 	box-sizing: border-box;
-	width: 22%;
-	margin-bottom: 2em;
-	margin-left: 2rem;
 	box-shadow: 0px 0px 3px 1px fade(@color_text, 50%);
 
 	p {
 		color: @color_title_text;
-		padding-top: 2rem;
-		padding-bottom: 2rem;
+		padding: 2rem 0.5rem;
 		background-color: @color_active_link;
 		margin: 0;
 		min-height: 30px;
@@ -255,8 +254,7 @@ section.news div.features ul li svg {
 
 section.news article {
 	padding: 1.5rem 1.5rem;
-	width: 700px;
-	margin: 0 auto;
+	margin: 1rem 20vw;
 	margin-top: 1rem;
 	display: block;
 	text-align: center;
@@ -468,7 +466,7 @@ section.contact div#map {
 	margin-bottom: 1em;
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+@media only screen and (max-device-width: 1200px) {
 	section.home {
 		min-height: 100vw;
 	}
@@ -486,7 +484,7 @@ section.contact div#map {
 	section.profile article:nth-of-type(4),
 	section.profile article:nth-of-type(2) {
 		background-position: calc(~'(50% - 180px)') @section_spacing, 65% bottom;
-		padding-left: 2em;
+		padding-left: 3em;
 		padding-right: 50%;
 	}
 
@@ -495,34 +493,64 @@ section.contact div#map {
 		padding: 0 1em;
 		text-align: center;
 		background-position: center bottom;
+		background-repeat: no-repeat;
 		padding-bottom: 750px;
-		margin: 2em 0;
+		margin: 2em 10vw;
+
+		p {
+			border: 1px solid @color_title;
+			border-top: none;
+			box-shadow: 0px 8px 3px 7px @color_footer;
+
+			&:after {
+				display: none;
+			}
+
+		}
+
+		h2 {
+			border: 1px solid @color_title;
+			border-bottom: none;
+			box-shadow: 0px 0px 3px 7px @color_footer;
+		}
 	}
 
 	section.managment article {
 		box-sizing: border-box;
 		padding-right: 1em;
 		width: auto;
-		padding-left: 450px;
+		padding-left: 50%;
 	}
 
 	section.managment article img {
-		left: 0.5em;
+		left: 5vw;
 	}
 
 	section.managment article:before {
-		left: calc(~'50% - 60px');
+		left: 45%;
+		height: 100%;
 	}
 
 	section.news div.features {
 		width: auto;
+
+		ul {
+			padding: 1em 1em;
+
+			li  {
+
+				.elements-in-row(4, 0.5rem);
+
+				p {
+					min-height: 9vh;
+				}
+			}
+		}
 	}
 
 	section.news article {
-		padding: 0 1em;
+		padding: 1em 1em;
 		text-align: center;
-		padding-bottom: 1em;
-		margin: 2em 0;
 	}
 
 	section.research div.articles,
