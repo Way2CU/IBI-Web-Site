@@ -299,7 +299,7 @@ section.media h1 {
 
 section div.articles {
 	margin: 0 auto;
-	padding: 3em 1rem;
+	padding: 3em calc(~'(100% - 1200px) / 2');
 }
 
 section div.articles article {
@@ -327,10 +327,11 @@ section div.articles article h3 {
 	padding: 0.5em 0;
 }
 
-section div.articles article img {
+section div.articles article p img {
 	position: absolute;
 	top: 0;
 	left: 0;
+	width: 100%;
 }
 
 section div.articles article a {
@@ -579,7 +580,7 @@ section.contact div#map {
 	section.events div.articles,
 	section.media div.articles {
 		width: auto;
-		padding: 0 1em;
+		padding: 1em 1em;
 		text-align: center;
 	}
 
@@ -588,13 +589,6 @@ section.contact div#map {
 	section.media div.articles article {
 		display: inline-block;
 		vertical-align: top;
-		margin: 1em 1em;
-	}
-
-	section.research div.articles article:nth-of-type(2),
-	section.events div.articles article:nth-of-type(2),
-	section.media div.articles article:nth-of-type(2) {
-		margin: 1em 1em;
 	}
 
 	section.contact div#map,
