@@ -7,7 +7,7 @@
  */
 
 section {
-	padding-top: 69px;
+	padding-top: 68px;
 }
 
 section.home {
@@ -63,11 +63,15 @@ h1.styled {
 	text-transform: uppercase;
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: 100% auto;
+	background-size: 100% 100%;
 	padding: calc(~'((100vw / 3.6) - 1em) / 2') 0;
 	line-height: 100%;
+
 	&.profile {
-		background-image: url(../images/mobile_profile_header.jpg);
+		background-color: @color_footer;
+		color: @color_active_link;
+		font-family: 'almoni-bold';
+		text-shadow: none;
 	}
 }
 
@@ -114,7 +118,7 @@ section.profile article:nth-of-type(4) {
 */
 
 section.managment h1.managment {
-	background-image: url(../images/mobile_managment.jpg);
+	background-image: url(../images/managment_header.jpg);
 }
 
 section.managment article {
@@ -145,7 +149,7 @@ section.managment article h3 {
 */
 
 section.news h1 {
-	background-image: url(../images/mobile_investment.jpg);
+	background-image: url(../images/investments_header.jpg);
 }
 
 section.news div.features {
@@ -185,7 +189,7 @@ section.news article {
 */
 
 section.media h1 {
-	background-image: url(../images/mobile_media.jpg);
+	background-image: url(../images/media_header.jpg);
 }
 
 section div.articles {
@@ -237,7 +241,7 @@ section div.articles article a {
 
 section.view h1,
 section.events h1 {
-	background-image: url(../images/mobile_event.jpg);
+	background-image: url(../images/event_header.jpg);
 }
 
 
@@ -267,7 +271,7 @@ section.view article img {
 */
 
 section.research h1 {
-	background-image: url(../images/mobile_research.jpg);
+	background-image: url(../images/research_header.jpg);
 }
 
 
@@ -289,7 +293,7 @@ section.research div.articles article a:after {
 */
 
 section.contact h1 {
-	background-image: url(../images/mobile_contact.jpg);
+	background-image: url(../images/contact_header.jpg);
 }
 
 section.contact #form_container {
