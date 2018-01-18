@@ -13,6 +13,9 @@
 		</head>
 
 		<body>
+			<!-- Embed site sprite -->
+			<cms:svg file="site-sprite.svg"/>
+
 			<cms:template file="parts/header.xml"/>
 
 			<section class="news">

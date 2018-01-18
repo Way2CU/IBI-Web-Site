@@ -2,6 +2,9 @@
 <!DOCTYPE document SYSTEM "../units/schema/language.dtd">
 <document>
 	<footer>
+		<!-- Embed site sprite -->
+		<cms:svg file="site-sprite.svg"/>
+
 		<nav>
 			<!-- Linkdin link -->
 			<a href="https://www.linkedin.com/company-beta/17920748" id="linkedin" class="footer_nav_links">
