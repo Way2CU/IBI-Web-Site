@@ -24,6 +24,8 @@
 						name="articles"
 						action="show_list"
 						group="research_articles"
+						order_by="id"
+						order_asc="0"
 						template="stock/article_generic.xml"
 						/>
 
