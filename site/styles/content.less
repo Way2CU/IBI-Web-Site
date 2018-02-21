@@ -317,7 +317,9 @@ section div.articles article {
 	display: inline-block;
 	vertical-align: top;
 	border: 1px solid fade(@color_menu, 20%);
-	min-height: 500px;
+	max-height: 500px;
+	height: 500px;
+	overflow: hidden;
 	padding-top: 200px;
 	position: relative;
 
@@ -355,6 +357,7 @@ section div.articles article a {
 	border-top: 1px solid fade(@color_menu, 20%);
 	text-align: center;
 	padding: 1em 0;
+	background-color: @color_title_text;
 	transition: color 0.3s;
 
 	&:hover {
@@ -373,7 +376,9 @@ section.events h1 {
 }
 
 section.events div.articles article {
-	min-height: 600px;
+	max-height: 500px;
+	height: 500px;
+	overflow: hidden;
 }
 
 
