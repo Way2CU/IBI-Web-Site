@@ -25,10 +25,9 @@
 						group="events_articles"
 						order_by="id"
 						order_asc="0"
-						template="parts/article_custom_link.xml"
+						template="stock/article_generic.xml"
 						/>
 				</div>
-
 			</section>
 
 			<cms:template file="parts/footer.xml" />
