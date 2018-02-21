@@ -449,13 +449,27 @@ section.contact #form_container form label {
 	width: 100%;
 	box-sizing: border-box;
 	margin-bottom: 1em;
+
+	span {
+		width: 25%;
+		display: inline-block;
+		color: fade(@color_menu, 40%);
+		font-size: 1.3rem;
+	}
+
+	&:nth-of-type(6) span {
+		display: block;
+		width: 100%;
+		margin-top: 2rem;
+		margin-bottom: 1rem;
+	}
 }
 
 section.contact #form_container form label input {
 	box-sizing: border-box;
 	padding: 1em 0.5em;
 	border: 1px solid fade(@color_menu, 40%);
-	width: 100%;
+	width: 65%;
 
 	&:hover,
 	&:focus {
@@ -464,7 +478,7 @@ section.contact #form_container form label input {
 }
 
 section.contact #form_container form label textarea {
-	width: 100%;
+	width: 90%;
 	box-sizing: border-box;
 	padding: 1em 0.5em;
 	height: 150px;

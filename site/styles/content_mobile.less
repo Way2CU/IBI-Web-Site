@@ -311,13 +311,21 @@ section.contact #form_container form label {
 	width: 100%;
 	box-sizing: border-box;
 	margin-bottom: 1em;
+
+	span {
+		width: 25%;
+		display: inline-block;
+		color: fade(@color_menu, 40%);
+		font-size: 1.2rem;
+		vertical-align: middle;
+	}
 }
 
 section.contact #form_container form label input {
 	box-sizing: border-box;
 	padding: 1em 0.5em;
 	border: 1px solid fade(@color_menu, 40%);
-	width: 100%;
+	width: 75%;
 
 	&:focus {
 		border: 1px solid @color_active_link;
