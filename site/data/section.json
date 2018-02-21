@@ -1,6 +1,5 @@
 {
-	"/": "comming_soon.xml",
-	"/_": "home.xml",
+	"/": "home.xml",
 	"/profile": "profile.xml",
 	"/managment": "managment.xml",
 	"/investment": "investment.xml",
