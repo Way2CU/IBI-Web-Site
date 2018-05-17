@@ -284,7 +284,7 @@ class head_tag extends Module {
 				}
 
 				// print optimized code
-				$optimizer->print_style_data();
+				/* $optimizer->print_style_data(); */
 			}
 		}
 
@@ -305,7 +305,7 @@ class head_tag extends Module {
 
 				// print optimized code
 				try {
-					$optimizer->print_script_data();
+					$optimizer->print_data();
 
 				} catch (ScriptCompileError $error) {
 					// handle issue with compiling code
