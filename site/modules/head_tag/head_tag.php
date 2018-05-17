@@ -157,6 +157,10 @@ class head_tag extends Module {
 		}
 	}
 
+	public function addTag($name, $params) {
+		$this->add_tag($name, $params);
+	}
+
 	/**
 	 * Add Google Analytics script to the page
 	 *
