@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE document SYSTEM "../../../units/schema/template.dtd">
+<document>
+	<form action="$params['form_action']" cms:eval="action" method="POST">
+		<label>
+			<span><cms:text constant="label_group_text_id" module="articles"/></span>
+			<input type="text" name="text_id" class="code" style="width: 270px;" maxlength="32"/>
+		</label>
+		<label>
+			<span><cms:text constant="label_group_title" module="articles"/></span>
+			<input type="text" class="multi-language" name="title" style="width: 370px;" maxlength="255"/>
+		</label>
+		<label>
+			<span><cms:text constant="label_group_description" module="articles"/></span>
+			<textarea class="multi-language" name="description" rows="5" cols="40" style="width: 370px; height: 150px;"/>
+		</label>
+		<div class="button_bar">
+			<button type="submit"><cms:text constant="save"/></button>
+			<button type="reset"><cms:text constant="reset"/></button>
+		</div>
+	</form>
+</document>
