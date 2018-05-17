@@ -3,16 +3,13 @@
 <document>
 	<html lang="$language" dir="$language_rtl ? 'rtl' : 'ltr'" cms:eval="lang,dir">
 		<head>
-			<title>
-				<cms:text constant="site_title"/>
-				<cms:module
+			<cms:module
 					name="head_tag"
 					action="add_to_title"
 					value="profile"
 					cms:constant="value"
 					/>
-			</title>
-			<cms:module name="head_tag" action="print_tag"/>
+			<cms:module name="head_tag" action="show"/>
 			<cms:raw file="parts/gtag.txt"/>
 		</head>
 

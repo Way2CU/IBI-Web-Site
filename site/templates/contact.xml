@@ -3,18 +3,15 @@
 <document>
 	<html lang="$language" dir="$language_rtl ? 'rtl' : 'ltr'" cms:eval="lang,dir">
 		<head>
-			<title>
-				<cms:text constant="site_title"/>
-				<cms:module
+			<cms:module
 					name="head_tag"
 					action="add_to_title"
 					value="contact"
 					cms:constant="value"
 					/>
-			</title>
 			<cms:script src="_BASEURL.'/site/scripts/map.js'" cms:eval="src"/>
 			<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDNuFxk1Dcqz_BVmvPQCBPjZ8exmz1XGXo"></script>
-			<cms:module name="head_tag" action="print_tag"/>
+			<cms:module name="head_tag" action="show"/>
 			<cms:raw file="parts/gtag.txt"/>
 		</head>
 
