@@ -9,13 +9,6 @@
  *  - before-print
  *		Event triggered before head tags are rendered to final template.
  *
- *	- before-title-print
- *		function(); returns array(string $title, int $priority)
- *
- *		Event triggered before page title is generated. Return value is an array
- *		containing page title and priority. System will choose title with highest
- *		priority.
- *
  * Author: Mladen Mijatov
  */
 use Core\Events;
@@ -259,7 +252,7 @@ class head_tag extends Module {
 		if ($show_title)
 			$this->print_tag(array('title', array()), $title_body);
 
-		// get instance of code optimizer if needed
+		// get instance of code optimizer
 		$optimizer = CodeOptimizer::get_instance();
 
 		// list of tags to show as they are
@@ -288,7 +281,7 @@ class head_tag extends Module {
 				}
 
 				// print optimized code
-				/* $optimizer->print_style_data(); */
+				$optimizer->print_style_data();
 			}
 		}
 
@@ -309,7 +302,7 @@ class head_tag extends Module {
 
 				// print optimized code
 				try {
-					$optimizer->print_data();
+					$optimizer->print_script_data();
 
 				} catch (ScriptCompileError $error) {
 					// handle issue with compiling code
