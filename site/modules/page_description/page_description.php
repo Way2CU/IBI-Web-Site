@@ -30,7 +30,8 @@ class page_description extends Module {
 
 		// connect to events
 		Events::connect('head-tag', 'before-title-print', 'set_title_and_description', $this);
-		Events::connect('backend', 'add-menu-items', 'add_menu_items', $this);
+		/* Events::connect('backend', 'add-menu-items', 'add_menu_items', $this); */
+		$this->add_menu_items();
 	}
 
 	/**

@@ -36,7 +36,8 @@ class articles extends Module {
 
 		// connect to search module
 		Events::connect('search', 'get-results', 'get_search_results', $this);
-		Events::connect('backend', 'add-menu-items', 'add_menu_items', $this);
+		/* Events::connect('backend', 'add-menu-items', 'add_menu_items', $this); */
+		$this->add_menu_items();
 	}
 
 	/**

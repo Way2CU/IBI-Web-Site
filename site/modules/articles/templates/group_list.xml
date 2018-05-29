@@ -2,9 +2,9 @@
 <!DOCTYPE document SYSTEM "../../../units/schema/template.dtd">
 <document>
 	<!-- Window Menu -->
-	<nav class="window">
+	<div class="main_menu">
 		<cms:var name="$params['link_new']"/>
-	</nav>
+	</div>
 
 	<!-- Header -->
 	<div class="scrollable_list">
